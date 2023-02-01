@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 10, 2022 at 11:53 PM
+-- Generation Time: Apr 13, 2022 at 09:51 PM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 8.0.12
 
@@ -90,7 +90,7 @@ INSERT INTO `text` (`id`, `text_key`, `text_hu`, `text_en`) VALUES
 (5, 'text.aboutme_im', 'A nevem', 'I\'m'),
 (6, 'text.aboutme_proffesion', 'Szoftverfejlesztő', 'Software Developer'),
 (7, 'text.aboutme', 'Rólam', 'About me'),
-(8, 'text.aboutme_text', 'Szoftverfejlesztő tanuló vagyok, aki sosem hátrál az új kihívásoktól és lehetőségektől. Van tapasztaltom többek között:  C#, java, html, css, php, JavaScript és MySQL nyelvekből. \r\nElérhetőségem: nove.norbert2002@gmail.com  \r\n', 'I’m a software developer student, who is not afraid of new challenges and opportunities. I have some experience in: C#, java, html, css, php, JavaScript és MySQL languages.\r\nContact me: nove.norbert2002@gmail.com  \r\n'),
+(8, 'text.aboutme_text', 'Szoftverfejlesztő tanuló vagyok, aki sosem hátrál meg az új kihívásoktól és lehetőségektől. Van tapasztaltom többek között:  C#, java, html, css, php, JavaScript és MySQL nyelvekből. \r\nElérhetőségem: nove.norbert2002@gmail.com  \r\n', 'I’m a software developer student, who is not afraid of new challenges and opportunities. I have some experience in: C#, java, html, css, php, JavaScript and MySQL languages.\r\nContact me: nove.norbert2002@gmail.com  \r\n'),
 (9, 'text.c', 'C# nyelvben készítettem egy szoftvert, amely egy nyúl tenyészet adatai vannak.  Lehetséges az adatokat felvenni és szerkeszteni és keresni. ', 'In C# I have created a software, which has data about rabbit breeding. It has the opportunity to insert, edit and search in the data.  '),
 (10, 'text.java', 'Java nyelven készítettem egy autókkal foglalkozó szoftvert. Feladata, hogy két táblát összekötve adatokat jelenítsen meg. Lehetőség van az adatok módosítására, és felvételére. ', 'In Java I have created a software with car topic. 2 tables are connected in the database, which are editable and new data is insertable'),
 (11, 'text.web', 'Ez a weboldal volt az eddigi legnagyobb projektem. A teljes weboldal nyíltforráskódú.', 'This site was my biggest project yet. The whole website is open source.'),
