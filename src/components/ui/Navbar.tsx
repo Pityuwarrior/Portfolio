@@ -1,4 +1,5 @@
 import variables from '../../assets/scss/Navbar.module.scss';
+import {Link} from 'react-scroll';
 
 interface NavbarProps {
     links: {
@@ -7,17 +8,19 @@ interface NavbarProps {
     }[];
 }
 
+
 export function Navbar({ links } : NavbarProps) { 
     return (
         <nav className={variables.navbar_container}> {/*Nav Children Check*/} 
             <h1 className={variables.navbar_title}>Norbi</h1>
-            <ul className={variables.navbar_list}>
+            <ul className={`${variables.navbar_list} teszt`}>
                 {links.map((link) => (
                     <li className={variables.navbar_item} key = {link.href}>
-                        <a className= {`${variables.navbar_link} ${variables.navbar_item_selected}`} href={link.href}>{link.label}</a>
+                        <Link to={link.href} spy={true} smooth={true} offset={0} duration={500} className={variables.navbar_link}>{link.label}</Link>
                     </li>
+                    
                 ))}
             </ul>
-    </nav>
+        </nav>
     )
 }

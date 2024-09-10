@@ -1,0 +1,12 @@
+@use "sass:map";
+
+$Colorpalette:  (
+PrimaryColor:rgb(230, 10, 255),
+SecondaryColor: rgb(50, 255, 255)
+);
+
+$BackgroundColor: (
+PrimaryBackground: rgb(40, 40, 40),
+SecondaryBackground: rgb(40, 50, 50)
+);
+

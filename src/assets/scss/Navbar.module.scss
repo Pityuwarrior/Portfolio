@@ -1,3 +1,5 @@
+@import './_variables.scss';
+
 .navbar_container{
     background-color: rgb(30, 30, 30);
     display: flex;
@@ -6,6 +8,7 @@
     flex: 0 0 auto; 
     width: 100%;
     position: fixed;
+    z-index: 2;
 
     .navbar_title{
         font-size: 25px;     
@@ -27,18 +30,26 @@
             white-space: nowrap;
             flex: 1 1 auto;
 
+            
+
             .navbar_link{
                 text-decoration: none;
                 color:azure;
-                font-weight: lighter;
+                font-weight: lighter;        
+                cursor: pointer;       
+                &:active{
+                    color: rgb(50, 255, 255) !important;
+                }
+                &:hover{
+                    padding-bottom: 3px;
+                    border-bottom: 3px solid map-get($Colorpalette, PrimaryColor);
+                }
             }
-
-            .navbar_item_selected{
-                color: rgb(210, 10, 255);
-                border: 10px 10px 10px 10px;
-                border-color: wheat;
-            }
-        }
+            
+           
+            
+       
+        }      
     }
 
 }

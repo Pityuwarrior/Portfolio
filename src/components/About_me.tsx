@@ -1,19 +1,28 @@
 import variables from '../assets/scss/About_me.module.scss';
-import staticText from '../data/contentHome.json'; 
-import image from '../../public/me.png';
+import { FaReact } from "react-icons/fa";
+import staticText from '../data/contentAboutMe.json'; 
 
+const templateProps = [
+    {class: "aboutme_left_container", data: "left"},
+    {class: "aboutme_center_container", data: "center"},  
+    {class: "aboutme_right_container", data: "left"}
+]
 
 export function About_me(){
     return(
-        <section className = {variables.home_section}>
-                <div className = {variables.left_container}>
-                    <p className = {variables.home_greeting}>{staticText.title}</p>
-                    <p className = {variables.home_name}>{staticText.description}</p>
-                    <p className = {variables.home_mytitle}>{staticText.content}</p>                  
+        <section className = {`${variables.aboutme_section} protfolio_section`} id = "about_me">
+                <div className={variables.aboutme_text}>   
+                    <h1 className = {variables.aboutme_title}>{staticText.title}</h1>
+                    <p className = {variables.aboutme_description}>{staticText.description}</p>
                 </div>
-                <div className = {variables.right_container}>
-                    <img className={variables.image_aboutme} src={image} alt="Me.png"/>
-                </div>      
+                <div className={variables.aboutme_templates_container}>
+                    {templateProps.map((templates) => (
+                    <div className = {variables[templates.class]}>
+                        <label className={variables.aboutme_left_container_logo}><FaReact style={{fontSize: '2rem' }} /></label>
+                    <p>{ (staticText.templateContent as { [key: string]: string })[templates.data] }</p>               
+                    </div>
+                    ))}         
+                </div>                        
         </section>
     )
 }
