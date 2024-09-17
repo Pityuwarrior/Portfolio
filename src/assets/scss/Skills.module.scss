@@ -1,0 +1,36 @@
+@import './variables';
+
+.skills_section{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 5pc;
+
+    .skills_text{
+        
+    }
+    
+    .skills_templates_container{
+       display: flex;
+       flex-direction: row;
+       
+       margin: 5px;
+        
+        .skills_left_container, .skills_center_container, .skills_right_container{
+            flex-grow: 1;
+            flex-basis: 0;
+            justify-content: center;
+            border: 2px solid map-get($Colorpalette , SecondaryColor);
+            border-radius: 13%;  
+            box-shadow: 3px 5px map-get($Colorpalette , PrimaryColor);
+            padding: 15px 1pc 15pc;
+            margin: 5px;     
+        }
+        .skills_center_container{
+            background-color: map-get($Colorpalette , PrimaryColor);
+            border: none;
+            box-shadow: 3px 5px map-get($Colorpalette , SecondaryColor);
+        }
+    }
+    
+}

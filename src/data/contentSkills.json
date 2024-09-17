@@ -1,0 +1,9 @@
+{
+    "title": "About Me",
+    "description": "I'm a graduaded but mostly self-taught web and software developer",
+    "templateContent": {
+        "left": "I'm a graduaded but mostly self-taught web and software developer",
+        "center": "I'm a graduaded but mostly self-taught software developer",
+        "right": "I'm a graduaded but mostly self-taught web and software developer"
+    }
+}
