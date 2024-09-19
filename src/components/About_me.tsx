@@ -18,7 +18,7 @@ export function About_me(){
     return(
         <section className = {`${variables.aboutme_section} protfolio_section`} id = "about_me" >
                 <div className = {variables.aboutme_left_container}>
-                    <div className = {variables.text_container}>
+                    <div className = {`${variables.text_container} scroll_animation`}>
                         <p className = {variables.aboutme_greeting}>{staticText.title}</p>
                         <p className = {variables.aboutme_name}>{staticText.description}</p>
                         <p className = {variables.aboutme_mytitle}>{staticText.content}</p>

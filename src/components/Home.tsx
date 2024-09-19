@@ -10,6 +10,8 @@ export function Home(){
                 <div className = {variables.text_container}>
                     <p className = {variables.home_greeting}>{staticText.greeting}<span className={variables.home_title}> {staticText.title}</span></p>
                     <p className = {`${variables.home_description} scroll_animation`}>{staticText.description}</p>
+                    <p className = "scroll_animation">{staticText.description}</p>
+
                 </div>
                 <ButtonScroll{...ButtonProps}/>
         </section>

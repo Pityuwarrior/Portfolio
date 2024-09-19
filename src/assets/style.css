@@ -16,3 +16,7 @@ html, body{
     display: flex;  
     height: 100vh;
 }
+
+.show{
+    background-color: aqua;
+}
