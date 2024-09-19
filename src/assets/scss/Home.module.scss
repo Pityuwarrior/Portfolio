@@ -1,4 +1,6 @@
 @import './utils/_typewriter_animation.scss';
+@import './variables';
+
 .home_section{
     display: flex;
     flex-direction: column;
@@ -8,11 +10,14 @@
     
     .text_container{
         text-align: center;
-        display: block;
-        max-width: 50%;
-        .home_title{
+        max-width: 40pc;
+        .home_greeting{
             font-size: 40px;
+            position: relative;
             @include typewritter_animation;
+            .home_title{
+                color:map-get($Colorpalette, SecondaryColor);
+            }  
         }
         .home_description{
             font-weight: normal;

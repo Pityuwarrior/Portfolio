@@ -1,5 +1,5 @@
 import variables from '../assets/scss/About_me.module.scss';
-import staticText from '../data/contentAboutme.json';
+import staticText from '../data/contentAboutMe.json';
 import image from '../../public/me.png';
 import * as iconLibrary from "react-icons/bs";
 import React from "react";

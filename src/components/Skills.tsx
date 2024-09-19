@@ -1,6 +1,6 @@
 import variables from '../assets/scss/Skills.module.scss';
 import { FaReact } from "react-icons/fa";
-import staticText from '../data/contentSkills.json'; 
+import staticText from '../data/contentSkills.json';
 
 const templateProps = [
     {class: "skills_left_container", data: "left"},

@@ -1,17 +1,18 @@
 @mixin typewritter_animation{
     border-right: 5px solid;
+    display: inline-block;
     width: 100%;
     white-space: nowrap;
     overflow: hidden;
     animation:
-        typing 2s,
-        cursor .4s step-end infinite alternate;
+        typing 2s steps(20, end),
+        cursor .4s step-end infinite alternate 2s
 }
 
 @keyframes typing{
-    from {width: 0}
+    0% { width: 0; }
 }
 
 @keyframes cursor{
-    50% {border-color: transparent;}
+    50% { border-color: transparent;}
 }
