@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 
+
 export function ScrollAnimation() {
     const hiddenElementsRef = useRef<NodeListOf<Element> | null>(null);
 
@@ -29,3 +30,22 @@ export function ScrollAnimation() {
         };
     }, [])  
 }
+
+/* 
+export function ScrollAnimation(){
+    
+    useEffect(() =>{
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                console.log(entry)
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show')
+                }
+            })
+        })
+    })
+
+    
+    const hiddenElements = document.querySelectorAll('.scoll_animation');
+}
+*/

@@ -1,3 +1,5 @@
+@import './utils/scroll_animation';
+
 .aboutme_section{
     background-color: rgb(27, 32, 32);
     flex-direction: row;
@@ -30,6 +32,8 @@
             justify-content: space-evenly;
             flex-flow: row nowrap;
             padding-right: 20pc;
+            @include hidden;
+
             .aboutme_icons_item{
                 display: inline-block;
                 text-decoration: none;

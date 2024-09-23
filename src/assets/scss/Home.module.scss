@@ -1,5 +1,6 @@
 @import './utils/_typewriter_animation.scss';
 @import './variables';
+@import './utils/scroll_animation';
 
 .home_section{
     display: flex;
@@ -21,6 +22,7 @@
         }
         .home_description{
             font-weight: normal;
+
         }
     }
 }

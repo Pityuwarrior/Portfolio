@@ -1,0 +1,6 @@
+@mixin hidden{
+    opacity: 0;
+    filter: blur(5);
+    transform: translateX(-100%);
+    transition: all 1;
+}
