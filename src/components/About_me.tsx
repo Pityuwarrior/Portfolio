@@ -17,10 +17,8 @@ const ButtonProps = { content: "About me", href: "about_me" }
 export function About_me(){
     return(
         <section className = {`${variables.aboutme_section} protfolio_section`} id = "about_me" >
-                <div className = {variables.aboutme_left_container}>
-                    <div className = {`${variables.text_container} scroll_animation`}>
-                        <p className = {variables.aboutme_greeting}>{staticText.title}</p>
-                        <p className = {variables.aboutme_name}>{staticText.description}</p>
+                <div className = {`${variables.aboutme_left_container} scroll_animation`}>
+                    <div className = {variables.text_container}>
                         <p className = {variables.aboutme_mytitle}>{staticText.content}</p>
                     </div>
                     <div className={variables.aboutme_icon_container}> 
@@ -32,9 +30,8 @@ export function About_me(){
                         </li>
                         ))}
                     </div>   
-                        <ButtonScroll{...ButtonProps}/>
                 </div>
-                <div className = {variables.aboutme_right_container}>
+                <div className = {`${variables.aboutme_right_container} scroll_animation`}>
                     <img className={variables.image_aboutme} src={image} alt="Me.png"/>
                 </div>  
         </section>

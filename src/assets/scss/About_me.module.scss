@@ -12,27 +12,15 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        font-size: 40px;
+        font-size: 30px;
         width: 50%;
         overflow: hidden;
-
-        .aboutme_greeting{
-        }
-        
-        .aboutme_name{
-
-        }
-
-        .aboutme_mytitle{
-     
-        }
 
         .aboutme_icon_container{
             display: flex;
             justify-content: space-evenly;
             flex-flow: row nowrap;
             padding-right: 20pc;
-            @include hidden;
 
             .aboutme_icons_item{
                 display: inline-block;
@@ -51,9 +39,10 @@
     .aboutme_right_container{
         display: flex;
         padding: 30px;
+        transition-delay: 200ms;
         .image_aboutme{
-            width: 350px;
-            height: 350px;
+            width: 500px;
+            height: 500px;
             border-radius: 50% 50px 50% 50%;
             border-color: black;            
         }

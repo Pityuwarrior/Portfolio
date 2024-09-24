@@ -22,7 +22,14 @@
         }
         .home_description{
             font-weight: normal;
-
+            transition-delay: 2s;
         }
+
+
+    }
+
+    .home_button{
+        padding-top: 3px;
+        transition-delay: 3s;
     }
 }

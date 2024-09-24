@@ -17,16 +17,16 @@ html, body{
     height: 100vh;
 }
 
-.scroll_animation{
+.scroll_animation {
     opacity: 0;
     filter: blur(5);
-    transform: translateX(-100%);
-    transition: all 1;
+    transform: translateX(-50%);
+    transition: all 1s;
 }
 
-
-.show{
-    opacity: 1 !important;
-    filter: blur(0) !important;
-    transform: translate(0) !important;
-}
+   
+  .show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+  }
