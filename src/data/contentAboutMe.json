@@ -1,3 +1,10 @@
 {
+    "name": {
+        "greeting": "I'm",
+        "firstName": "Norbert",
+        "lastName": "István Nové",
+        "a" : "A",
+        "myTitle": "Web Developer"
+    },
     "content": "Recently graduated software and web developer student, with 5 years of experience in developing console and form applications using C# and Java languages. In the last 2 years, I have also acquired skills in web development and database administration, specifically in PHP, HTML, CSS and MySQL. Since my graduation, I have been learning new languages and frameworks such as React, Laravel, JavaScript, TypeScript, and Sass."
 }

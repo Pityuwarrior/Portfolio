@@ -14,12 +14,28 @@ const myIcons = [
 
 const ButtonProps = { content: "About me", href: "about_me" }
 
+const greetingProps = [
+    {class: "skills_left_container", data: "left"},
+    {class: "skills_center_container", data: "center"},  
+    {class: "skills_right_container", data: "left"}
+]
+
+/* 
+"greeting": "I'm a ",
+        "firstName": "Norbert",
+        "lastName": "István Nové",
+        "a" : "a",
+        "myTitle": "Web Developer"
+*/
+
 export function About_me(){
     return(
         <section className = {`${variables.aboutme_section} protfolio_section`} id = "about_me" >
                 <div className = {`${variables.aboutme_left_container} scroll_animation`}>
                     <div className = {variables.text_container}>
-                        <p className = {variables.aboutme_mytitle}>{staticText.content}</p>
+                        <h1 className = {variables.aboutme_name}>{staticText.name.greeting} <span className={variables.aboutme_firstName}> {staticText.name.firstName}</span> {staticText.name.lastName}</h1>
+                        <h2 className={variables.aboutme_myTitle}>{staticText.name.a} <span className={variables.aboutme_title}> {staticText.name.myTitle}</span></h2>
+                        <p className = {variables.aboutme_content}>{staticText.content}</p>
                     </div>
                     <div className={variables.aboutme_icon_container}> 
                         {myIcons.map((icons) => (
