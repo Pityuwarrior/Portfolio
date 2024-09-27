@@ -12,7 +12,8 @@ const myIcons = [
     { iconName:"BsYoutube", href:"https://www.youtube.com/channel/UCH2C3Z5bN174UnwE-BMaZKg"}
 ];
 
-const ButtonProps = { content: "About me", href: "about_me" }
+const ButtonPropsCV = { content: "Download CV", href: "home" }
+const ButtonProps = { content: "Skills", href: "skills" }
 
 const greetingProps = [
     {class: "skills_left_container", data: "left"},
@@ -45,7 +46,11 @@ export function About_me(){
                             </a>
                         </li>
                         ))}
-                    </div>   
+                    </div> 
+                    <div className={variables.aboutme_button_container}> 
+                        <ButtonScroll{...ButtonPropsCV}/>  
+                        <ButtonScroll{...ButtonProps}/>
+                    </div> 
                 </div>
                 <div className = {`${variables.aboutme_right_container} scroll_animation`}>
                     <img className={variables.image_aboutme} src={image} alt="Me.png"/>

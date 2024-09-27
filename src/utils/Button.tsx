@@ -1,4 +1,4 @@
-import variables from '../assets/scss/Button.module.scss'
+import variables from '../assets/scss/Button.module.scss';
 import {Link} from 'react-scroll';
 
 
