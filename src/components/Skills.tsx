@@ -3,23 +3,32 @@ import { FaReact } from "react-icons/fa";
 import staticText from '../data/contentSkills.json';
 
 const templateProps = [
-    {class: "skills_left_container", data: "left"},
-    {class: "skills_center_container", data: "center"},  
-    {class: "skills_right_container", data: "left"}
+    {Containerclass: "skills_left_container", title: "templateContent.left.title", content: "templateContent.left.content"},
+    {Containerclass: "skills_center_container", title: "templateContent.center.title", content: "templateContent.center.content"}, 
+    {Containerclass: "skills_right_container", title: "templateContent.right.title", content: "templateContent.right.content"}
 ]
 
+function readKey (key: string, staticText: { [key: string]: any }): any {
+    const parts = key.split('.')
+    let value = staticText
+    for(const part of parts) {
+        value = value[part] ?? null;
+      }
+      return value;
+}
 export function Skills(){
     return(
         <section className = {`${variables.skills_section} protfolio_section`} id = "skills">
                 <div className={variables.skills_text}>   
                     <h1 className = {variables.skills_title}>{staticText.title}</h1>
-                    <p className = {variables.skills_description}>{staticText.description}</p>
+                    <h2 className = {variables.skills_description}>{staticText.description}</h2>
                 </div>
                 <div className={variables.skills_templates_container}>
                     {templateProps.map((templates) => (
-                    <div className = {variables[templates.class]}>
+                    <div className = {variables[templates.Containerclass]}>
                         <label className={variables.skills_left_container_logo}><FaReact style={{fontSize: '2rem' }} /></label>
-                    <p>{ (staticText.templateContent as { [key: string]: string })[templates.data] }</p>               
+                        <h1>{readKey(templates.title, staticText)}</h1>  
+                        <p>{readKey(templates.content, staticText)}</p>     
                     </div>
                     ))}         
                 </div>                        

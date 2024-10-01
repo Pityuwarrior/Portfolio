@@ -1,9 +1,18 @@
 {
-    "title": "About Me",
+    "title": "Skills",
     "description": "I'm a graduaded but mostly self-taught web and software developer",
     "templateContent": {
-        "left": "I'm a graduaded but mostly self-taught web and software developer",
-        "center": "I'm a graduaded but mostly self-taught software developer",
-        "right": "I'm a graduaded but mostly self-taught web and software developer"
+        "left": {
+            "title": "Software Developer",
+            "content": "I have experience in C#, Java. In the last 2 years."
+        },
+        "center": {
+            "title": "Web Developer",
+            "content": "I have also acquired skills in web development."
+        },
+        "right": {
+            "title": "Database Administrator",
+            "content": "and database administration, specifically in PHP, HTML, CSS and MySQL."
+        }
     }
 }
