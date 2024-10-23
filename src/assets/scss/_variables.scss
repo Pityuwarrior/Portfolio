@@ -2,7 +2,8 @@
 
 $Colorpalette:  (
 PrimaryColor:rgb(230, 10, 255),
-SecondaryColor: rgb(50, 255, 255)
+SecondaryColor: rgb(50, 255, 255),
+SecondaryColorShadow: rgba(50, 255, 255, 0.22)
 );
 
 $BackgroundColor: (
@@ -11,3 +12,5 @@ SecondaryBackground: rgb(40, 50, 50)
 );
 
 $FontColor:azure;
+
+

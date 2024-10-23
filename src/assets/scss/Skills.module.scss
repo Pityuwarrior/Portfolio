@@ -1,5 +1,11 @@
 @import './variables';
 
+@property --gradient-angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+  }
+
 .skills_section{
     display: flex;
     flex-direction: column;
@@ -11,13 +17,16 @@
     }
     
     .skills_templates_container{
-       display: flex;
-       flex-direction: row;
-       justify-content: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin: 5px;
+        
 
-       margin: 5px;
         
         .skills_left_container, .skills_center_container, .skills_right_container{
+            /*
             flex-grow: 1;
             flex-basis: 0;
             justify-content: center;
@@ -27,12 +36,52 @@
             padding: 15px 1pc 10pc;
             margin: 10px;     
             max-width: 20pc;
+
+            */
+            height: 60vh;
+            aspect-ratio: 1 / 1.5;
+            background-color: rgb(50, 50, 50);
+            border-radius: 0.5rem;
+            position: relative;
+
+            &::before, &::after{
+                content: "";
+                position: absolute;
+                inset: -0.5rem;
+                z-index: -1;
+                background: conic-gradient(
+                    from var(--gradient-angle),
+                    map-get($Colorpalette , PrimaryColor),
+                    map-get($Colorpalette , SecondaryColor),
+                    map-get($Colorpalette , PrimaryColor),
+                );
+                border-radius: inherit;
+                animation: rotation 10s linear infinite;
+            }
+
+            &::after{
+                filter: blur(3.5rem);
+            }
+
+            @keyframes rotation {
+                0% {
+                  --gradient-angle: 0deg;
+                }
+                100% {
+                  --gradient-angle: 360deg;
+                }
+            }
         }
         .skills_center_container{
-            background-color: map-get($Colorpalette , PrimaryColor);
-            border: none;
-            box-shadow: 3px 5px map-get($Colorpalette , SecondaryColor);
+            &::before, &::after{
+                background: conic-gradient(
+                    from var(--gradient-angle),
+                    map-get($Colorpalette , SecondaryColor),
+                    map-get($Colorpalette , PrimaryColor),
+                    map-get($Colorpalette , SecondaryColor)
+                );}
         }
     }
     
 }
+
