@@ -4,15 +4,15 @@
     "templateContent": {
         "left": {
             "title": "Software Developer",
-            "content": "I have experience in C#, Java. In the last 2 years."
+            "content": "With two years of dedicated experience in software development, I bring a solid foundation in programming languages such as C# and Java. My expertise spans creating efficient, scalable applications with a focus on clean, maintainable code. I am constantly exploring new technologies and best practices to ensure my development approach meets modern standards."
         },
         "center": {
             "title": "Web Developer",
-            "content": "I have also acquired skills in web development."
+            "content": "I am also skilled in web development, with experience in designing and implementing responsive websites and web applications. Proficient in PHP, HTML, CSS, and JavaScript, I have the tools to build user-friendly and visually appealing sites that prioritize performance and accessibility."
         },
         "right": {
             "title": "Database Administrator",
-            "content": "and database administration, specifically in PHP, HTML, CSS and MySQL."
+            "content": "Alongside software and web development, I have hands-on experience in database administration. From structuring databases to writing optimized queries, I am proficient in MySQL and committed to ensuring data is efficiently stored, accessed, and managed. My aim is to ensure the integrity and performance of database systems through best practices and effective problem-solving."
         }
     }
 }
