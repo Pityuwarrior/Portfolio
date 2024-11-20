@@ -19,13 +19,13 @@ function readKey (key: string, staticText: { [key: string]: any }): any {
 export function Skills(){
     return(
         <section className = {`${variables.skills_section} protfolio_section`} id = "skills">
-                <div className={variables.skills_text}>   
+                <div className={`${variables.skills_text} scroll_animation`}>   
                     <h1 className = {variables.skills_title}>{staticText.title}</h1>
                     <h2 className = {variables.skills_description}>{staticText.description}</h2>
                 </div>
                 <div className={variables.skills_templates_container}>
                     {templateProps.map((templates) => (
-                    <div className = {variables[templates.Containerclass]}>
+                    <div className = {`${variables[templates.Containerclass]} `}>
                         <label className={variables.skills_left_container_logo}><FaReact style={{fontSize: '2rem' }} /></label>
                         <h1>{readKey(templates.title, staticText)}</h1>  
                         <p>{readKey(templates.content, staticText)}</p>     
