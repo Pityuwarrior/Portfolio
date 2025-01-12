@@ -5,11 +5,13 @@ import * as iconLibrary from "react-icons/bs";
 import React from "react";
 import { ButtonScroll } from '@/utils/Button';
 
+
+
 const myIcons = [
-    { iconName:"BsLinkedin", href:"https://www.linkedin.com/in/norbert-nove/"},
-    { iconName:"BsGithub", href:"https://github.com/Pityuwarrior"},
-    { iconName:"BsInstagram", href:"https://www.instagram.com/novenorbert/"},
-    { iconName:"BsYoutube", href:"https://www.youtube.com/channel/UCH2C3Z5bN174UnwE-BMaZKg"}
+    { iconName: "BsLinkedin", href: process.env.REACT_APP_LINKS_linkedin},
+    { iconName: "BsGithub", href: process.env.REACT_APP_LINKS_github},
+    { iconName: "BsInstagram", href: process.env.REACT_APP_LINKS_instagram},
+    { iconName: "BsYoutube", href: process.env.REACT_APP_LINKS_youtube}
 ];
 
 const ButtonPropsCV = { content: "Download CV", href: "home" }

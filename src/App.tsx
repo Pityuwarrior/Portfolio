@@ -5,6 +5,7 @@ import {Skills} from "./components/Skills"
 import {Projects} from "./components/Projects"
 import {Contact} from "./components/Contact"
 import { ScrollAnimation } from "./utils/ScrollAnimation"
+import { Footer } from "./components/ui/Footer"
 
 const myLinks = [
   { href: "home", label: "Home" },
@@ -25,6 +26,7 @@ export default function App() {
         <Skills/>
         <Projects/>
         <Contact/>
+        <Footer/>
         <ScrollAnimation/>
       </>
     )
