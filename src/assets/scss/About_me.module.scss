@@ -37,24 +37,20 @@
         
         .aboutme_icon_container{
             display: flex;
-            justify-content: space-evenly;
+            justify-content: space-between;
             flex-flow: row nowrap;
             padding-right: 20pc;
-
-            .aboutme_icons_item{
-                display: inline-block;
-                text-decoration: none;
-                .aboutme_icon{
-                    color: rgb(255, 255, 255)
-                }
-            }
+            gap: 10px 30px;
+            max-width: 50px;
         }
+
         .aboutme_button_container{
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             width: 20pc;
             margin: 20px 0 0 60px;
+
         }
         
 
