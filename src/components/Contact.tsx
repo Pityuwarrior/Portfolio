@@ -15,14 +15,12 @@ export function Contact(){
                 <h1 className = {variables.contact_title}>{staticText.title}</h1>
                 <h2 className = {variables.contact_description}>{staticText.description}</h2>
             </div>
-            <div className={variables.contact_flex}>
-                <div className={variables.innerflex}>
-                    {ContactListProps.map((icon) => (
-                        <div className={variables.contact_iconContainer} style={{ backgroundColor: icon.BackgroundColor }}>
-                            <div className={variables.contact_icon}><Icons iconName={icon.ContactIcon} href={icon.href} /><p></p></div>
-                        </div>
-                        ))}
-                </div>
+            <div className={variables.contact_Iconsflex}>
+                {ContactListProps.map((icon) => (
+                    <div className={variables.contact_iconContainer} style={{ backgroundColor: icon.BackgroundColor }}>
+                        <div className={variables.contact_icon}><Icons iconName={icon.ContactIcon} href={icon.href} /><p>{icon.ContactName}</p></div>
+                    </div>
+                ))}               
             </div>
         </section>
     )
