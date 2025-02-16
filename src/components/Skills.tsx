@@ -1,11 +1,12 @@
 import variables from '../assets/scss/Skills.module.scss';
 import { FaReact } from "react-icons/fa";
 import staticText from '../data/contentSkills.json';
+import { Icons } from '../utils/Icons';
 
 const templateProps = [
-    {Containerclass: "skills_left_container", title: "templateContent.left.title", content: "templateContent.left.content"},
-    {Containerclass: "skills_center_container", title: "templateContent.center.title", content: "templateContent.center.content"}, 
-    {Containerclass: "skills_right_container", title: "templateContent.right.title", content: "templateContent.right.content"}
+    {Containerclass: "skills_left_container", title: "templateContent.left.title", content: "templateContent.left.content", icon: "BsCodeSlash"},
+    {Containerclass: "skills_center_container", title: "templateContent.center.title", content: "templateContent.center.content", icon: "BsReact"}, 
+    {Containerclass: "skills_right_container", title: "templateContent.right.title", content: "templateContent.right.content", icon: "BsDatabase"}
 ]
 
 function readKey (key: string, staticText: { [key: string]: any }): any {
@@ -26,7 +27,7 @@ export function Skills(){
                 <div className={variables.skills_templates_container}>
                     {templateProps.map((templates) => (
                     <div className = {`${variables[templates.Containerclass]} `}>
-                        <label className={variables.skills_left_container_logo}><FaReact style={{fontSize: '2rem' }} /></label>
+                        <label className={variables.skills_left_container_logo}><FaReact style={{fontSize: '2rem' }} />{/**<Icons iconName = {templates.icon} href = {templates.title} /> */}</label>
                         <h1>{readKey(templates.title, staticText)}</h1>  
                         <p>{readKey(templates.content, staticText)}</p>     
                     </div>

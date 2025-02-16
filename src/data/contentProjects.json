@@ -1,0 +1,27 @@
+{
+    "welcome":"Welcome to my",
+    "title": "Projects",
+    "description": "Here are some of the projects I've worked on recently. Click on a project to learn more about it.",
+    "projects": {
+        "Portfolio": {
+            "title": "Software Developer",
+            "technologies": "React, JavaScript, TypeScript, Sass",
+            "content": "I built this portfolio website to showcase my skills and projects. It’s a single-page application created with React, JavaScript, TypeScript, and Sass. The site features a responsive design and smooth animations to provide an engaging user experience. I also integrated a contact form to make it easy for visitors to reach out to me."
+        },
+        "React_Todolist": {
+            "title": "React Todolist",
+            "technologies": "React, JavaScript, Sass",
+            "content": "This project is a simple to-do list application built with React and Sass. Users can add, edit, and delete tasks, as well as mark them as complete. The app features a clean, intuitive interface that makes it easy to manage tasks and stay organized. I implemented local storage to save tasks between sessions, ensuring a seamless user experience."
+        },
+        "Could_Storage": {
+            "title": "Could Storage Service",
+            "technologies": "Laravel, PHP, MySQL, HTML, CSS",
+            "content": "I developed a cloud storage service using Laravel, PHP, MySQL, HTML, and CSS. The application allows users to upload, download, and manage files in the cloud. I implemented user authentication and file permissions to ensure data security and privacy. The service features a clean, user-friendly interface that makes it easy to store and access files from anywhere."
+        },
+        "Old_Portfolio": {
+            "title": "Old Portfolio Website",
+            "technologies": "HTML, CSS, JavaScript",
+            "content": "This is my old portfolio website, which I built using HTML, CSS, and JavaScript. The site features a simple, responsive design with a focus on showcasing my projects and skills. I included a contact form to make it easy for visitors to get in touch with me. While I’ve since updated my portfolio with a new design and additional features, this site remains a testament to my growth as a developer."
+        }
+    }
+}

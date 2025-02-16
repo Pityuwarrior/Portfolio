@@ -2,28 +2,32 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    align-content: center;
+    align-items: center;
     padding-top: 5pc;
+    overflow-y: auto;
 
     .contact_Iconsflex{
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: center;
         align-content: center;
+        flex-wrap: wrap;
+        max-width: 75%;
+        gap: 15px;
+        padding-top: 20px;
 
         .contact_iconContainer{
             padding: 20px 20px 0 20px;
-            height: 15vh;
+            height: 13vh;
             aspect-ratio: 2 / 1;
-            background-color: rgb(50, 50, 50);
-            border-radius: 1.5rem;
-            position: relative;
+            border-radius: 1.5rem;   
             .contact_icon{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-                
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                padding-top: 2px;
+                align-items: center;
+                font-size: 30px;
             }
         }
              

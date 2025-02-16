@@ -3,8 +3,17 @@ import staticText from '../data/contentContact.json';
 import { Icons } from '../utils/Icons';
 
 const ContactListProps = [
-    {ContactIcon: "BsEnvelope", ContactName: "Email", href: "nove.norbert2002@gmail.com", BackgroundColor: "red"},
-    {ContactIcon: "BsLinkedin", ContactName: "LinkedIn", href: "https://www.linkedin.com/in/norbert-nove/", BackgroundColor: "blue"},
+    {ContactIcon: "BsEnvelope", ContactName: "Email", href: "nove.norbert2002@gmail.com", BackgroundColor: "#c71610"},
+    {ContactIcon: "BsLinkedin", ContactName: "LinkedIn", href: "https://www.linkedin.com/in/norbert-nove/", BackgroundColor: "#0077B5"},
+    {ContactIcon: "BsGithub", ContactName: "GitHub", href: "https://www.linkedin.com/in/norbert-nove/", BackgroundColor: "#24292e"},
+    {ContactIcon: "BsYoutube", ContactName: "YouTube", href: "https://www.linkedin.com/in/norbert-nove/", BackgroundColor: "#ff0000"},
+    {ContactIcon: "BsWhatsapp", ContactName: "WhatsApp", href: "https://www.linkedin.com/in/norbert-nove/", BackgroundColor: "#25d366"},
+    {ContactIcon: "BsMicrosoftTeams", ContactName: "Teams", href: "https://www.linkedin.com/in/norbert-nove/", BackgroundColor: "#464EB8"},
+    {ContactIcon: "BsSkype", ContactName: "Skype", href: "https://www.linkedin.com/in/norbert-nove/", BackgroundColor: "#00aff0"},
+    {ContactIcon: "BsDiscord", ContactName: "Discord", href: "https://www.linkedin.com/in/norbert-nove/", BackgroundColor: "#5865f2"},
+    {ContactIcon: "BsTiktok", ContactName: "Tiktok", href: "https://www.linkedin.com/in/norbert-nove/", BackgroundColor: "#010101"},
+    {ContactIcon: "BsSteam", ContactName: "Steam", href: "https://www.linkedin.com/in/norbert-nove/", BackgroundColor: "#171A21"},
+    {ContactIcon: "BsTwitch", ContactName: "Twitch", href: "https://www.linkedin.com/in/norbert-nove/", BackgroundColor: "#9146ff"}
 
 ]
 
