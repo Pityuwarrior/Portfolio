@@ -1,6 +1,6 @@
 import variables from '../assets/scss/About_me.module.scss';
 import staticText from '../data/contentAboutMe.json';
-import image from '../../public/me.png';
+import image from '/me.png';
 import { ButtonScroll } from '@/utils/Button';
 import { Icons } from '../utils/Icons';
 
@@ -45,7 +45,7 @@ export function About_me(){
                     </div> 
                 </div>
                 <div className = {`${variables.aboutme_right_container} scroll_animation`}>
-                    <img className={variables.image_aboutme} src={image} alt="Me.png"/>
+                    <img className={variables.image_aboutme} src='images/me.png' alt="Me.png"/>
                 </div>  
         </section>
     )
