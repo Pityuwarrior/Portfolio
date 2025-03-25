@@ -6,7 +6,7 @@ const ButtonProps = { content: "About me", href: "about_me" }
 
 export function Home(){
     return(
-        <section className = {`${variables.home_section} protfolio_section`} id = "home">
+        <section className = {`${variables.home_section} portfolio_section`} id = "home">
                 <div className = {variables.text_container}>
                     <p className = {variables.home_greeting}>{staticText.welcome}<span className={variables.home_title}> {staticText.title}</span></p>
                     <p className = {`${variables.home_description} scroll_animation`}>{staticText.description}</p>

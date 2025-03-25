@@ -19,7 +19,7 @@ const ContactListProps = [
 
 export function Contact(){
     return(
-        <section className = {`${variables.contact_section} protfolio_section`}id = "contact">
+        <section className = {`${variables.contact_section} portfolio_section`}id = "contact">
             <div className={variables.contact_text}>   
                 <h1 className = {variables.contact_title}>{staticText.title}</h1>
                 <h2 className = {variables.contact_description}>{staticText.description}</h2>

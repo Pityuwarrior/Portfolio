@@ -19,7 +19,7 @@ function readKey (key: string, staticText: { [key: string]: any }): any {
 }
 export function Skills(){
     return(
-        <section className = {`${variables.skills_section} protfolio_section`} id = "skills">
+        <section className = {`${variables.skills_section} portfolio_section`} id = "skills">
                 <div className={`${variables.skills_text} scroll_animation`}>   
                     <h1 className = {variables.skills_title}>{staticText.title}</h1>
                     <h2 className = {variables.skills_description}>{staticText.description}</h2>

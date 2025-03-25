@@ -1,6 +1,6 @@
 import variables from '../assets/scss/About_me.module.scss';
 import staticText from '../data/contentAboutMe.json';
-import image from '/me.png';
+import image from '../../public/me.png';
 import { ButtonScroll } from '@/utils/Button';
 import { Icons } from '../utils/Icons';
 
@@ -27,7 +27,7 @@ const greetingProps = [
 
 export function About_me(){
     return(
-        <section className = {`${variables.aboutme_section} protfolio_section`} id = "about_me" >
+        <section className = {`${variables.aboutme_section} portfolio_section`} id = "about_me" >
                 <div className = {`${variables.aboutme_left_container} scroll_animation`}>
                     <div className = {variables.text_container}>
                         <h1 className = {variables.aboutme_name}>{staticText.name.greeting} <span className={variables.aboutme_firstName}> {staticText.name.firstName}</span> {staticText.name.lastName}</h1>
@@ -45,7 +45,7 @@ export function About_me(){
                     </div> 
                 </div>
                 <div className = {`${variables.aboutme_right_container} scroll_animation`}>
-                    <img className={variables.image_aboutme} src='images/me.png' alt="Me.png"/>
+                    <img className={variables.image_aboutme} src={image} alt="Me.png"/>
                 </div>  
         </section>
     )
