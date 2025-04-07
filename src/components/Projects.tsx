@@ -1,5 +1,6 @@
 import variables from '../assets/scss/Projects.module.scss';
 import staticText from '../data/contentProjects.json'; 
+import image1 from '../../public/image1.png';
 
 const projectProps = [
     {title: "Project1", description: "Description1", image: "image1.png"},
@@ -26,8 +27,8 @@ export function Projects(){
                     </div>
                     <div className = {`${variables.projects_right_container} scroll_animation`}>
                         <div classname = {variables.projects_text_container}>
-                            <h1 className = {variables.projects_title}>{staticText.right.title}</h1>
-                            <p className = {variables.projects_description}>{staticText.right.description}</p>
+                            <h1 className = {variables.projects_title}>{"staticText.right.title"}</h1>
+                            <p className = {variables.projects_description}>{"staticText.right.description"}</p>
                         </div>
                     </div>  
                 </div>
