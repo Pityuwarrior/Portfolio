@@ -1,0 +1,35 @@
+@import './utils/_typewriter_animation.scss';
+@import './variables';
+@import './utils/scroll_animation';
+
+.home_section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    
+    .text_container{
+        text-align: center;
+        max-width: 40pc;
+        .home_greeting{
+            font-size: 40px;
+            position: relative;
+            @include typewritter_animation;
+            .home_title{
+                color:map-get($Colorpalette, SecondaryColor);
+            }  
+        }
+        .home_description{
+            font-weight: normal;
+            transition-delay: 2s;
+        }
+
+
+    }
+
+    .home_button{
+        padding-top: 3px;
+        transition-delay: 3s;
+    }
+}

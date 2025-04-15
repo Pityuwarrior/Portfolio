@@ -1,0 +1,32 @@
+html, body{
+    height: 100%;
+    max-width: 100%;
+    margin:0;
+    padding:0;
+    align-content: center;
+    justify-content: center;
+    font-weight: normal;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    color:azure;
+    background-color: rgb(40, 40, 40);
+}
+
+.portfolio_section{
+    display: flex;  
+    height: 100vh;
+}
+
+.scroll_animation {
+    opacity: 0;
+    filter: blur(5);
+    transform: translateX(-50%);
+    transition: all 1s;
+}
+
+   
+  .show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+  }

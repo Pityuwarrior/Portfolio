@@ -1,0 +1,36 @@
+.contact_section{
+    display: flex;
+    background-color: rgb(27, 32, 32);
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding-top: 5pc;
+    overflow-y: auto;
+
+    .contact_Iconsflex{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+        max-width: 75%;
+        gap: 15px;
+        padding-top: 20px;
+
+        .contact_iconContainer{
+            padding: 20px;
+            height: 13vh;
+            aspect-ratio: 2 / 1;
+            border-radius: 1.5rem;   
+            .contact_icon{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;             
+                align-items: center;
+                font-size: 30px;
+            }
+        }
+             
+    }
+    
+}

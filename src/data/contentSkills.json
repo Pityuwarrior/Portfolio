@@ -1,0 +1,18 @@
+{
+    "title": "Skills",
+    "description": "I'm a graduated but mostly self-taught web and software developer with a passion for continuous learning and hands-on experience in IT, software, and web development.",
+    "templateContent": {
+        "left": {
+            "title": "Software Developer",
+            "content": "With a Software Developer Certification and over two years of experience, I have built a strong foundation in programming languages like C# and Java. My expertise includes creating scalable applications, writing clean, maintainable code, and continuously expanding my knowledge to stay ahead in the ever-evolving tech landscape."
+        },
+        "center": {
+            "title": "Web Developer",
+            "content": "As a web developer, I specialize in designing and implementing responsive, user-friendly websites and web applications. My technical toolkit includes HTML, CSS, JavaScript, and modern frameworks like React, Laravel, TypeScript, Next.js, and Sass. I am committed to delivering high-performance, accessible digital experiences that meet user needs and business goals. My current projects include building a cloud storage service using cutting-edge technologies."
+        },
+        "right": {
+            "title": "IT Specialist",
+            "content": "In my role as an IT technician at Kirkens Korshær, I ensure the smooth operation of IT infrastructure, including systems, networks, and devices. My responsibilities include IT support, network monitoring, and social media management. My previous internship at La-Fer-Car Kft allowed me to gain hands-on experience in network management, computer maintenance, and customer support. These roles have equipped me with a service-oriented mindset and the ability to troubleshoot and resolve technical challenges efficiently."
+        }
+    }
+}

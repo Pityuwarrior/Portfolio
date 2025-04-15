@@ -1,0 +1,86 @@
+@import './variables';
+
+@property --gradient-angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.skills_section{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding-top: 5pc;
+
+    .skills_text{
+        padding-bottom: 20px;
+    }
+    
+    .skills_templates_container{
+        display: flex;
+        flex-direction: row;
+        gap: 30px; 
+        flex-wrap: wrap;
+        padding-top: 50px;
+        transition-delay: 1s;
+              
+        .skills_left_container, .skills_center_container, .skills_right_container{
+            padding: 20px 20px 0 20px;
+            height: 50vh;
+            aspect-ratio: 1 / 1.5;
+            background-color: rgb(50, 50, 50);
+            border-radius: 1.5rem;
+            position: relative;
+
+            &::before, &::after{
+                content: "";
+                position: absolute;
+                inset: -0.5rem;
+                z-index: -1;
+                background: conic-gradient(
+                    from var(--gradient-angle),
+                    map-get($Colorpalette , SecondaryColor),
+                    map-get($Colorpalette , SecondaryColorShadow),
+                    map-get($Colorpalette , SecondaryColor)
+                    
+                );
+                border-radius: inherit;
+                animation: rotation 5s linear infinite;
+            }
+
+            &::after{
+                filter: blur(1.5rem);
+            }
+
+            @keyframes rotation {
+                0% {
+                  --gradient-angle: 0deg;
+                }
+                100% {
+                  --gradient-angle: 360deg;
+                }
+            }
+        }
+        .skills_center_container{
+            &::before, &::after{
+                background: conic-gradient(
+                    from var(--gradient-angle),
+                    map-get($Colorpalette , PrimaryColor),
+                    map-get($Colorpalette , PrimaryColorShadow),
+                    map-get($Colorpalette , PrimaryColor),
+                );}
+        }
+    }
+
+    .skills_left_container, .skills_center_container, .skills_right_container {
+        &.scroll_animation {
+            opacity: 0;
+            filter: blur(5);
+            transform: translateX(-50%);
+            transition: all 1s;
+        }
+    }
+
+}
+
