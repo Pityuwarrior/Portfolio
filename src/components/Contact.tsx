@@ -7,6 +7,7 @@ const ContactListProps = [
     {ContactIcon: "BsLinkedin", ContactName: "LinkedIn", href: "https://www.linkedin.com/in/norbert-nove/", BackgroundColor: "#0077B5"},
     {ContactIcon: "BsGithub", ContactName: "GitHub", href: "https://github.com/pityuwarrior", BackgroundColor: "#24292e"},
     {ContactIcon: "BsYoutube", ContactName: "YouTube", href: "https://www.youtube.com/@Pityuwarrior", BackgroundColor: "#ff0000"},
+    {ContactIcon: "BsInstagram", ContactName: "Instagram", href: "https://www.instagram.com/novenorbert/", BackgroundColor: "#cd486b"},
     {ContactIcon: "BsWhatsapp", ContactName: "WhatsApp", href: "https://wa.me/qr/MYIE7OAFAANPF1", BackgroundColor: "#25d366"},
     {ContactIcon: "BsMicrosoftTeams", ContactName: "Teams", href: "https://teams.live.com/meet/9369632218048?p=eEZWqTrwixulRJxBC1", BackgroundColor: "#464EB8"},
     {ContactIcon: "BsDiscord", ContactName: "Discord", href: "https://discord.com/channels/@me/1129886212610588752", BackgroundColor: "#5865f2"},

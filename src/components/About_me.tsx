@@ -7,9 +7,9 @@ import { Icons } from '../utils/Icons';
 
 const myIcons = [
     { iconName: "BsLinkedin", href: "https://www.linkedin.com/in/norbert-nove/"},
-    { iconName: "BsGithub", href: "https://www.linkedin.com/in/norbert-nove/"},
-    { iconName: "BsInstagram", href: "https://www.linkedin.com/in/norbert-nove/"},
-    { iconName: "BsYoutube", href: "https://www.linkedin.com/in/norbert-nove/"}
+    { iconName: "BsGithub", href: "https://github.com/pityuwarrior"},
+    { iconName: "BsInstagram", href: "https://www.instagram.com/novenorbert/"},
+    { iconName: "BsYoutube", href: "https://www.youtube.com/@Pityuwarrior"}
 ];
 
 const ButtonProps = { content: "Skills", href: "skills" }
