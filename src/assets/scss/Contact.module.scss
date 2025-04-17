@@ -5,6 +5,9 @@
     align-items: center;
     padding-top: 5pc;
     overflow-y: auto;
+    @media (max-width: 980px) {
+        height: 80vh !important; 
+    }
 
     .contact_Iconsflex{
         display: flex;

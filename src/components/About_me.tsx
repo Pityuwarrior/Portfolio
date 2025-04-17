@@ -8,9 +8,9 @@ import { Icons } from '../utils/Icons';
 
 const myIcons = [
     { iconName: "BsLinkedin", href: "https://www.linkedin.com/in/norbert-nove/"},
-    { iconName: "BsGithub", href: "https://www.linkedin.com/in/norbert-nove/"},
-    { iconName: "BsInstagram", href: "https://www.linkedin.com/in/norbert-nove/"},
-    { iconName: "BsYoutube", href: "https://www.linkedin.com/in/norbert-nove/"}
+    { iconName: "BsGithub", href: "https://github.com/pityuwarrior"},
+    { iconName: "BsInstagram", href: "https://www.instagram.com/novenorbert/"},
+    { iconName: "BsYoutube", href: "https://www.youtube.com/@Pityuwarrior"}
 ];
 
 const sex = {iconName: "BsLinkedin", href: "cat.org"}
@@ -31,7 +31,7 @@ export function About_me(){
                 <div className = {`${variables.aboutme_left_container} scroll_animation`}>
                     <div className = {variables.text_container}>
                         <h1 className = {variables.aboutme_name}>{staticText.name.greeting} <span className={variables.aboutme_firstName}> {staticText.name.firstName}</span> {staticText.name.lastName}</h1>
-                        <h2 className={variables.aboutme_myTitle}>{staticText.name.a} <span className={variables.aboutme_title}> {staticText.name.myTitle}</span></h2>
+                        <h2 className = {variables.aboutme_myTitle}>{staticText.name.a} <span className={variables.aboutme_title}> {staticText.name.myTitle}</span></h2>
                         <p className = {variables.aboutme_content}>{staticText.content}</p>
                     </div>
                     <div className={variables.aboutme_icon_container}> 
