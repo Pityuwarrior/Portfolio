@@ -26,7 +26,7 @@ export function Skills(){
                 </div>
                 <div className={variables.skills_templates_container}>
                     {templateProps.map((templates) => (
-                    <div className = {`${variables[templates.Containerclass]} `}>
+                    <div className = {`${variables[templates.Containerclass]} scroll_animation`}>
                         <label className={variables.skills_left_container_logo}><FaReact style={{fontSize: '2rem' }} />{/**<Icons iconName = {templates.icon} href = {templates.title} /> */}</label>
                         <h1>{readKey(templates.title, staticText)}</h1>  
                         <p>{readKey(templates.content, staticText)}</p>     

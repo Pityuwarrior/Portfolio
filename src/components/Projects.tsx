@@ -28,36 +28,13 @@ export function Projects(){
                         ))}
                     </div>
                     <div className = {`${variables.projects_right_container} scroll_animation`}>
-                        <div classname = {variables.projects_text_container}>
+                        <div className = {variables.projects_text_container}>
                             <h1 className = {variables.projects_title}>{"staticText.right.title"}</h1>
                             <p className = {variables.projects_description}>{"staticText.right.description"}</p>
                         </div>
                     </div>  
                 </div>
         </section>
-/*
-<section className = {`${variables.aboutme_section} portfolio_section`} id = "about_me" >
-<div className = {`${variables.aboutme_left_container} scroll_animation`}>
-    <div className = {variables.text_container}>
-        <h1 className = {variables.aboutme_name}>{staticText.name.greeting} <span className={variables.aboutme_firstName}> {staticText.name.firstName}</span> {staticText.name.lastName}</h1>
-        <h2 className={variables.aboutme_myTitle}>{staticText.name.a} <span className={variables.aboutme_title}> {staticText.name.myTitle}</span></h2>
-        <p className = {variables.aboutme_content}>{staticText.content}</p>
-    </div>
-    <div className={variables.aboutme_icon_container}> 
-    {myIcons.map((icon) => (
-        <Icons iconName={icon.iconName} href={icon.href} />
-    ))}
-    </div>                  
-    <div className={variables.aboutme_button_container}> 
-        <ButtonScroll{...ButtonPropsCV}/>  
-        <ButtonScroll{...ButtonProps}/>
-    </div> 
-</div>
-<div className = {`${variables.aboutme_right_container} scroll_animation`}>
-    <img className={variables.image_aboutme} src={image} alt="Me.png"/>
-</div>  
-</section>
-*/
     )
 }
 

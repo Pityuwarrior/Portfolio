@@ -4,7 +4,7 @@
     syntax: "<angle>";
     initial-value: 0deg;
     inherits: false;
-  }
+}
 
 .skills_section{
     display: flex;
@@ -43,13 +43,21 @@
             */
 
             padding: 20px 20px 0 20px;
-            height: 50vh;
-            aspect-ratio: 1 / 1.5;
+            flex-basis: 33%;
             background-color: rgb(50, 50, 50);
             border-radius: 1.5rem;
             position: relative;
 
-            &::before, &::after{
+            &::after{      
+                content: "";
+                position: absolute;
+                z-index: -1;
+                background-color: rgb(50, 50, 50);
+                border-radius: 1.5rem;
+                inset: -0rem;
+            }
+
+            &::before{
                 content: "";
                 position: absolute;
                 inset: -0.5rem;
@@ -63,10 +71,6 @@
                 );
                 border-radius: inherit;
                 animation: rotation 5s linear infinite;
-            }
-
-            &::after{
-                filter: blur(1.5rem);
             }
 
             @keyframes rotation {
@@ -97,6 +101,7 @@
             transition: all 1s;
         }
     }
+
 
     .skills_left_container{
         transition-delay: 1s;
