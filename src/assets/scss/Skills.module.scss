@@ -15,25 +15,48 @@
 
     .skills_text{
         padding-bottom: 20px;
+        @media (max-width: 980px) {
+            font-size: 30px;
+            padding: 0px 20px 0px 20px;
+        }
     }
     
     .skills_templates_container{
         display: flex;
+        justify-content: center;
         flex-direction: row;
         gap: 30px; 
         flex-wrap: wrap;
         padding-top: 50px;
-        transition-delay: 1s;
-              
+        max-width: 90%;
+        max-height: 20vh;
+        @media (max-width: 980px) {
+            flex-direction: column;
+            gap: 50px; 
+            padding: 0px 20px 20px 20px;
+            max-width: 80%;
+            max-height: initial;
+            font-size: 30px;
+        }      
+
+
         .skills_left_container, .skills_center_container, .skills_right_container{
-            padding: 20px 20px 0 20px;
-            height: 50vh;
-            aspect-ratio: 1 / 1.5;
+            padding: 10px 20px 0 20px;
+            flex-basis: 25%;
             background-color: rgb(50, 50, 50);
             border-radius: 1.5rem;
             position: relative;
 
-            &::before, &::after{
+            &::after{      
+                content: "";
+                position: absolute;
+                z-index: -1;
+                background-color: rgb(50, 50, 50);
+                border-radius: 1.5rem;
+                inset: -0rem;
+            }
+
+            &::before{
                 content: "";
                 position: absolute;
                 inset: -0.5rem;
@@ -49,10 +72,6 @@
                 animation: rotation 5s linear infinite;
             }
 
-            &::after{
-                filter: blur(1.5rem);
-            }
-
             @keyframes rotation {
                 0% {
                   --gradient-angle: 0deg;
@@ -63,7 +82,7 @@
             }
         }
         .skills_center_container{
-            &::before, &::after{
+            &::before{
                 background: conic-gradient(
                     from var(--gradient-angle),
                     map-get($Colorpalette , PrimaryColor),
@@ -73,14 +92,15 @@
         }
     }
 
-    .skills_left_container, .skills_center_container, .skills_right_container {
-        &.scroll_animation {
-            opacity: 0;
-            filter: blur(5);
-            transform: translateX(-50%);
-            transition: all 1s;
-        }
+    .skills_left_container{
+        transition-delay: 1s;
     }
-
+    .skills_center_container{
+        transition-delay: 2s;
+    }
+    .skills_right_container{
+        transition-delay: 3s;
+    }
+    
 }
 

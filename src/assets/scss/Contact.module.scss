@@ -5,7 +5,16 @@
     text-align: center;
     align-items: center;
     padding-top: 5pc;
-    overflow-y: auto;
+    @media (max-width: 980px) {
+    height: 130vh !important;
+    }
+    .contact_text{
+        padding-bottom: 20px;
+        @media (max-width: 980px) {
+            font-size: 30px;
+            padding: 0px 20px 0px 20px;
+        }
+    }
 
     .contact_Iconsflex{
         display: flex;
@@ -14,20 +23,36 @@
         align-content: center;
         flex-wrap: wrap;
         max-width: 75%;
-        gap: 15px;
+        gap: 20px;
         padding-top: 20px;
+        @media (max-width: 980px) {
+            flex-direction: column;
+            flex-wrap: nowrap;       
+        }
 
         .contact_iconContainer{
-            padding: 20px;
-            height: 13vh;
-            aspect-ratio: 2 / 1;
-            border-radius: 1.5rem;   
+            padding: 20px;          
+            flex-basis: 25%;
+            max-width: 20pc;
+            border-radius: 1.5rem;
+            @media (max-width: 980px) {
+                flex-basis: initial;
+                width: 20pc;
+                height: 10pc;
+                max-width: initial;
+                transition-delay: initial !important; 
+
+            }
+
             .contact_icon{
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;             
                 align-items: center;
                 font-size: 30px;
+                @media (max-width: 980px) {
+                    font-size: 50px;
+                }
             }
         }
              

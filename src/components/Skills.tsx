@@ -24,9 +24,9 @@ export function Skills(){
                     <h1 className = {variables.skills_title}>{staticText.title}</h1>
                     <h2 className = {variables.skills_description}>{staticText.description}</h2>
                 </div>
-                <div className={`${variables.skills_templates_container} portfolio_section scroll_animation`}>
+                <div className={`${variables.skills_templates_container} portfolio_section `}>
                     {templateProps.map((templates) => (
-                    <div className = {`${variables[templates.Containerclass]}`}>
+                    <div className = {`${variables[templates.Containerclass]} scroll_animation`}>
                         <label className={variables.skills_left_container_logo}></label>
                         <h1>{readKey(templates.title, staticText)}</h1>  
                         <p>{readKey(templates.content, staticText)}</p>     
