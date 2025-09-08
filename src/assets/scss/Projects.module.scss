@@ -1,5 +1,7 @@
+@import './_variables.scss';
+
 .projects_section {
-    background-color: rgb(27, 32, 32);
+    background-color: map-get($BackgroundColor, SecondaryBackground);
     display: flex;
     flex-direction: column;
     text-align: center;

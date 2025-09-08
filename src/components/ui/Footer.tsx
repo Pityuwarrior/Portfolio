@@ -6,6 +6,6 @@ export function Footer(){
             <section className={variables.innerFooter}>
                 <p>Made by: Norbert István Nové</p>
             </section>
-        </footer>
+        </footer>       
     )
 }

@@ -2,7 +2,7 @@
 @import './_variables.scss';
 
 .aboutme_section{
-    background-color: rgb(27, 32, 32);
+    background-color: map-get($BackgroundColor, SecondaryBackground);
     flex-direction: row;
     margin: auto;
     justify-content:space-around;
