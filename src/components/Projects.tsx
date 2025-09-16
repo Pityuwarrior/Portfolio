@@ -1,22 +1,15 @@
 import variables from '../assets/scss/Projects.module.scss';
 import staticText from '../data/contentProjects.json'; 
-import image1 from '../../public/image1.png';
 import React, { useState, useEffect } from 'react';
+import image1 from '../../public/images/image1.png';
+import image2 from '../../public/images/image2.png';
+import image3 from '../../public/images/image3.png';
 
-
-const projectProps = [
-    {title: "Project1", description: "Description1", image: image1},
-    {title: "Project2", description: "Description2", image: image1},
-    {title: "Project3", description: "Description3", image: image1}
-]
+const images = [image1, image2, image3];
 
 export function Projects(){
         const [selectedProject, setSelectedProject] = useState(0);
-        
-        
-        useEffect(() => {
-        console.log('selectedProject state:', selectedProject);
-        }, [selectedProject]);
+                
 
 
     return(
@@ -27,16 +20,19 @@ export function Projects(){
                 </div> 
                 <div className={variables.projects_container}>         
                     <div className={variables.projects_left_container}>
-                        {projectProps.map((project, index) => (         
-                                <div key={index} className={variables.project_template} onClick={() => setSelectedProject(index)}>                                  
-                                    <img src = {project.image} alt = {project.title} className = {variables.project_image}/>
-                                </div>                     
+                        {Object.values(staticText.projects).map((project, index) => (         
+                            <div key={index} className={variables.project_template} onClick={() => setSelectedProject(index)}>                                  
+                                <img src={images[index]} alt = {project.title} className = {variables.project_image }/>
+                                <p className={variables.project_title}>{index}</p>                     
+                            </div>                     
                         ))}
                     </div>
                     <div className = {`${variables.projects_right_container} scroll_animation`}>
                         <div className = {variables.projects_text_container}>
                             <h1 className = {variables.projects_title}>{Object.values(staticText.projects)[selectedProject].title}</h1>
                             <p className = {variables.projects_description}>{Object.values(staticText.projects)[selectedProject].content}</p>
+                            <h2 className = {variables.projects_technologies_title}>Technologies:</h2>
+                            <p className = {variables.projects_technologies}>{Object.values(staticText.projects)[selectedProject].technologies}</p>
                         </div>
                     </div>  
                 </div>
