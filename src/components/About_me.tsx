@@ -1,7 +1,7 @@
 import variables from '../assets/scss/About_me.module.scss';
 import staticText from '../data/contentAboutMe.json';
 import { ButtonScroll } from '@/utils/Button';
-import { Icons } from '../utils/Icons';
+import { BsIcons } from '../utils/Icons';
 
 
 
@@ -11,8 +11,6 @@ const myIcons = [
     { iconName: "BsInstagram", href: "https://www.instagram.com/novenorbert/"},
     { iconName: "BsYoutube", href: "https://www.youtube.com/@Pityuwarrior"}
 ];
-
-const sex = {iconName: "BsLinkedin", href: "cat.org"}
 
 const ButtonPropsCV = { content: "Download CV", href: "home" }
 const ButtonProps = { content: "Skills", href: "skills" }
@@ -35,7 +33,7 @@ export function About_me(){
                     </div>
                     <div className={variables.aboutme_icon_container}> 
                     {myIcons.map((icon) => (
-                        <Icons iconName={icon.iconName} href={icon.href} />
+                        <BsIcons iconName={icon.iconName}/>
                     ))}
                     </div>                  
                     <div className={variables.aboutme_button_container}> 

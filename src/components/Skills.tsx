@@ -1,7 +1,6 @@
 import variables from '../assets/scss/Skills.module.scss';
-import { FaReact } from "react-icons/fa";
 import staticText from '../data/contentSkills.json';
-import { Icons } from '../utils/Icons';
+
 
 const templateProps = [
     {Containerclass: "skills_left_container", title: "templateContent.left.title", content: "templateContent.left.content", icon: "BsCodeSlash"},

@@ -4,13 +4,17 @@ import React, { useState, useEffect } from 'react';
 import image1 from '../../public/images/image1.png';
 import image2 from '../../public/images/image2.png';
 import image3 from '../../public/images/image3.png';
+import { SiIcons } from '../utils/Icons';
 
 const images = [image1, image2, image3];
 
 export function Projects(){
-        const [selectedProject, setSelectedProject] = useState(0);
-                
+    
+    const [selectedProject, setSelectedProject] = useState(0);
+    
+    const technologiesListProps = [ 
 
+    ]
 
     return(
         <section className = {`${variables.projects_section} portfolio_section`} id = "projects">
@@ -31,8 +35,10 @@ export function Projects(){
                         <div className = {variables.projects_text_container}>
                             <h1 className = {variables.projects_title}>{Object.values(staticText.projects)[selectedProject].title}</h1>
                             <p className = {variables.projects_description}>{Object.values(staticText.projects)[selectedProject].content}</p>
-                            <h2 className = {variables.projects_technologies_title}>Technologies:</h2>
-                            <p className = {variables.projects_technologies}>{Object.values(staticText.projects)[selectedProject].technologies}</p>
+                            <h2 className = {variables.projects_technologies_title}>Technologies:</h2>                          
+                            {Object.values(staticText.projects[selectedProject].technologies).map((technology) => (
+                                <SiIcons iconName = {technology.logo} />
+                            ))}
                         </div>
                     </div>  
                 </div>

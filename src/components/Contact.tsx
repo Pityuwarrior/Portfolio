@@ -1,6 +1,6 @@
 import variables from '../assets/scss/Contact.module.scss';
 import staticText from '../data/contentContact.json';
-import { Icons } from '../utils/Icons';
+import { BsIcons } from '../utils/Icons';
 
 const contactListProps = [
     {ContactIcon: "BsEnvelope", ContactName: "Email", href: "mailto:nove.norbert2002@gmail.com", BackgroundColor: "#c71610"},
@@ -25,9 +25,9 @@ export function Contact(){
             </div>
             <div className={variables.contact_Iconsflex}>
                 {contactListProps.map((icon) => (
-                    <div className={variables.contact_iconContainer} style={{ backgroundColor: icon.BackgroundColor }}>
-                        <div className={variables.contact_icon}><Icons iconName={icon.ContactIcon} href={icon.href} /><p>{icon.ContactName}</p></div>
-                    </div>
+                    <a href={icon.href} target='_blank'> <div className={variables.contact_iconContainer} style={{ backgroundColor: icon.BackgroundColor }}>
+                         <div className={variables.contact_icon}><BsIcons iconName={icon.ContactIcon}/><p>{icon.ContactName}</p></div>
+                    </div>  </a>
                 ))}               
             </div>
         </section>
