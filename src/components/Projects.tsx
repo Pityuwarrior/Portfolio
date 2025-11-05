@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 import image1 from '../../public/images/image1.png';
 import image2 from '../../public/images/image2.png';
 import image3 from '../../public/images/image3.png';
-import { SiIcons } from '../utils/Icons';
+import { Icons } from '../utils/Icons';
 
 const images = [image1, image2, image3];
 
@@ -12,9 +12,6 @@ export function Projects(){
     
     const [selectedProject, setSelectedProject] = useState(0);
     
-    const technologiesListProps = [ 
-
-    ]
 
     return(
         <section className = {`${variables.projects_section} portfolio_section`} id = "projects">
@@ -37,7 +34,13 @@ export function Projects(){
                             <p className = {variables.projects_description}>{Object.values(staticText.projects)[selectedProject].content}</p>
                             <h2 className = {variables.projects_technologies_title}>Technologies:</h2>                          
                             {Object.values(staticText.projects[selectedProject].technologies).map((technology) => (
-                                <SiIcons iconName = {technology.logo} />
+                                <span className={variables.projects_logo} style={{ color: technology.color }}><Icons iconName={technology.logo}/></span>
+                            ))}
+                            <h2 className = {variables.projects_technologies_title}>Links:</h2>
+                            {Object.values(staticText.projects[selectedProject].link).map((links) => (
+                                <a href={links.link_href} style={{textDecoration: "none"}} target='_blank'> 
+                                    <span className={variables.projects_link} style={{ color: "#FFFFFF" }}><Icons iconName={links.link_logo}/></span> 
+                                </a>
                             ))}
                         </div>
                     </div>  

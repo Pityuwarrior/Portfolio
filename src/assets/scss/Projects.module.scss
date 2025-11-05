@@ -68,10 +68,13 @@
 
             .project_description {
                 position: relative;
-                @include typewritter_animation;
                 font-size: 1rem;
                 padding: 0 1rem 1rem;
-            }      
+            }  
+            
+            .projects_logo, .projects_link{
+                padding-right: 6px;
+            }
         }
     }
 }
