@@ -6,10 +6,10 @@ import { Icons } from '../utils/Icons';
 
 
 const myIcons = [
-    { iconName: "BsLinkedin", href: "https://www.linkedin.com/in/norbert-nove/"},
-    { iconName: "BsGithub", href: "https://github.com/pityuwarrior"},
-    { iconName: "BsInstagram", href: "https://www.instagram.com/novenorbert/"},
-    { iconName: "BsYoutube", href: "https://www.youtube.com/@Pityuwarrior"}
+    { iconName: "SiLinkedin", href: "https://www.linkedin.com/in/norbert-nove/"},
+    { iconName: "SiGithub", href: "https://github.com/pityuwarrior"},
+    { iconName: "SiInstagram", href: "https://www.instagram.com/novenorbert/"},
+    { iconName: "SiYoutube", href: "https://www.youtube.com/@Pityuwarrior"}
 ];
 
 const ButtonProps = { content: "Skills", href: "skills" }
@@ -31,7 +31,7 @@ export function About_me(){
                     </div>
                     <div className={variables.aboutme_icon_container}> 
                     {myIcons.map((icon) => (
-                        <Icons iconName={icon.iconName} href={icon.href} />
+                        <Icons iconName={icon.iconName}/>
                     ))}
                     </div>                  
                     <div className={variables.aboutme_button_container}>  

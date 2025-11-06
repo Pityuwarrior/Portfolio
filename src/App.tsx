@@ -2,6 +2,7 @@ import {Navbar} from "./components/ui/Navbar"
 import {Home} from "./components/Home"
 import {About_me} from "./components/About_me"
 import {Skills} from "./components/Skills"
+import {Projects} from "./components/Projects"
 import {Contact} from "./components/Contact"
 import { ScrollAnimation } from "./utils/ScrollAnimation"
 import { Footer } from "./components/ui/Footer"
@@ -10,6 +11,7 @@ const myLinks = [
   { href: "home", label: "Home" },
   { href: "about_me", label: "About Me" },
   { href: "skills", label: "Skills" },
+  { href: "projects", label: "Projects" },
   { href: "contact", label: "Contact" }
 ];
 
@@ -21,6 +23,7 @@ export default function App() {
         <Home/>
         <About_me/>
         <Skills/>
+        <Projects/>
         <Contact/>
         <Footer/>
         <ScrollAnimation/>

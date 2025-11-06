@@ -21,7 +21,6 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        font-size: 30px;
         max-width: 40%;
         @media (max-width: 980px) {
             order: 2;
@@ -31,7 +30,7 @@
         }
         .aboutme_name{
             @media (max-width: 980px) {
-                font-size: 65px;
+
             }
             .aboutme_firstName{
                 color: map-get($Colorpalette, PrimaryColor);           
@@ -40,12 +39,8 @@
         
         .aboutme_myTitle{
             padding-left: 3px;
-            font-size: 40px;
             position: relative;
             top: -25px;
-            @media (max-width: 980px) {
-                font-size: 60px;
-            }
             .aboutme_title{
                 color: map-get($Colorpalette, SecondaryColor);
             }
@@ -53,10 +48,6 @@
         }
         .aboutme_content{
             padding: 0 0 40px 3px;
-            font-size: 20px;
-            @media (max-width: 980px) {
-                font-size: 40px;
-            }
         }
         
         .aboutme_icon_container{

@@ -1,5 +1,6 @@
 import variables from '../assets/scss/Icons.module.scss';
-import * as iconLibrary from "react-icons/bs";
+import * as siIconLibrary from "react-icons/si";
+import { IconContext } from "react-icons";
 import React from "react";
 
 interface IconProps{
@@ -7,12 +8,18 @@ interface IconProps{
     href : string 
 }
 
-export function Icons({iconName, href}:IconProps){
+
+export function Icons({ iconName }: IconProps) {
+    const IconComponent = (siIconLibrary as { [key: string]: React.ElementType })[iconName];
+    if (!IconComponent) {
+        console.warn(`Icons: icon "${iconName}" not found in react-icons/si`);
+        return null;
+    }
     return (
-            <li className={variables.icons_item} key = {href}>
-                <a href={href} target='_blank' className={variables.icon} style = {{fontSize: "40px"}}>
-                    {React.createElement((iconLibrary as { [key: string]: React.ElementType })[iconName], {})}
-                </a>
-            </li>
-    )
+        <li className={variables.icons_item}>
+            <IconContext.Provider value={{ className: variables.icon }}>
+                <IconComponent />
+            </IconContext.Provider>
+        </li>
+    );
 }

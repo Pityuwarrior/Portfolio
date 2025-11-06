@@ -1,0 +1,52 @@
+{
+    "welcome":"Welcome to my",
+    "title": "Projects",
+    "description": "Here are some of the projects I've worked on recently. Click on a project to learn more about it.",
+    "projects": {
+        "0": {
+            "title": "Portfolio Website",
+            "technologies": [
+                { "logo": "SiReact", "color": "#61DAFB" },
+                { "logo": "SiTypescript", "color": "#3178c6" },
+                { "logo": "SiSass", "color": "#cc6699" }
+            ],
+            "link": [
+                { "link_logo": "SiVercel", "link_href": "https://pityuwarrior.vercel.app" },
+                { "link_logo": "SiGithub", "link_href": "https://github.com/Pityuwarrior/Portfolio" }
+            ],  
+            "content": "I built this portfolio website to showcase my skills and projects. It’s a single-page application created with React, JavaScript, TypeScript, and Sass. The site features a responsive design and smooth animations to provide an engaging user experience. I also integrated a contact form to make it easy for visitors to reach out to me.",
+            "image": "image1.png"
+        },
+        "1": { 
+            "title": "Could Storage Service",
+            "technologies": [
+                { "logo": "SiNextdotjs", "color": "#FFFFFF" },
+                { "logo": "SiReact", "color": "#61DAFB" },
+                { "logo": "SiTypescript", "color": "#3178c6" },
+                { "logo": "SiLaravel", "color": "#ff2d20" },
+                { "logo": "SiMysql", "color": "#4479a1" },
+                { "logo": "SiSass", "color": "#cc6699" }
+            ],
+            "link": [
+                { "link_logo": "SiGithub", "link_href": "https://github.com/Pityuwarrior/cloud_storage" }
+            ],  
+            "content": "I developed a cloud storage service using Laravel, PHP, MySQL, HTML, and CSS. The application allows users to upload, download, and manage files in the cloud. I implemented user authentication and file permissions to ensure data security and privacy. The service features a clean, user-friendly interface that makes it easy to store and access files from anywhere.",
+            "image": "project3.png"
+        },
+        "2": {
+            "title": "React Todolist",
+            "technologies": [
+                { "logo": "SiReact", "color": "#61DAFB" },
+                { "logo": "SiTypescript", "color": "#3178c6" },
+                { "logo": "SiLaravel", "color": "#ff2d20" },
+                { "logo": "SiMysql", "color": "#4479a1" },
+                { "logo": "SiSass", "color": "#cc6699" }
+            ],
+            "link": [
+                { "link_logo": "SiGithub", "link_href": "https://github.com/Pityuwarrior/TodoList" }
+            ],  
+            "content": "This project is a simple to-do list application built with React and Sass. Users can add, edit, and delete tasks, as well as mark them as complete. The app features a clean, intuitive interface that makes it easy to manage tasks and stay organized. I implemented local storage to save tasks between sessions, ensuring a seamless user experience.",
+            "image": "project2.png"
+        }  
+    }
+}

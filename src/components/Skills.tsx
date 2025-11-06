@@ -28,7 +28,7 @@ export function Skills(){
                     {templateProps.map((templates) => (
                     <div className = {`${variables[templates.Containerclass]} scroll_animation`}>
                         <label className={variables.skills_left_container_logo}></label>
-                        <h1>{readKey(templates.title, staticText)}</h1>  
+                        <h2>{readKey(templates.title, staticText)}</h2>  
                         <p>{readKey(templates.content, staticText)}</p>     
                     </div>
                     ))}         
