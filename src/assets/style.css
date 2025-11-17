@@ -51,5 +51,18 @@ transform: translateX(0);
   p{
     font-size: 30px;
   }
-
 }
+
+@media (min-width: 981px) and (max-width: 1910px) {
+  h1{
+    font-size: 40px;
+  }
+  h2{
+    font-size: 30px;
+  }
+  p{
+    font-size: 20px;
+  }
+}
+
+

@@ -13,8 +13,8 @@
         justify-content: center;
         gap: 10pc;
         text-align: center;
-        height: 110vh !important;
-        padding-top: 20pc;
+        height: 100vh !important;
+        padding-top: 14pc;
     }
 
     .aboutme_left_container{
@@ -26,7 +26,6 @@
             order: 2;
             max-width: 80%;
             margin-bottom: 30pc;
-            transition-delay: 1s;
         }
         .aboutme_name{
             @media (max-width: 980px) {
@@ -89,6 +88,7 @@
             order: 1;
             padding: unset;
             margin-top: 100px;
+            transition-delay: initial !important
         }
 
         .image_aboutme{

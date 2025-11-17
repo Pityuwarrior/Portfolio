@@ -12,8 +12,8 @@
     text-align: center;
     align-items: center;
     padding-top: 3pc;
-    @media (max-width: 980px) {
-        height: initial !important;    
+    @media (max-width: 1910px) {
+        height: 130vh !important;    
     }
 
     .skills_text{
@@ -31,12 +31,13 @@
         padding-top: 30px;
         max-width: 90%;
         max-height: 20vh;
-        @media (max-width: 980px) {
+        @media (max-width: 1910px) {
             flex-direction: column;
             gap: 40px; 
-            padding: 0px 20px 20px 20px;
             max-width: 80%;
             max-height: initial;
+            flex-wrap: nowrap;
+            padding-bottom: 5pc;
         }      
 
 
@@ -46,6 +47,9 @@
             background-color: rgb(50, 50, 50);
             border-radius: 1.5rem;
             position: relative;
+            @media (max-width: 1910px){
+                transition-delay: initial !important;
+            }
 
             &::after{      
                 content: "";
